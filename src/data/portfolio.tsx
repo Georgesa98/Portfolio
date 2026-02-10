@@ -1,6 +1,5 @@
 import {
   Code2,
-  Database,
   Zap,
   Shield,
   Activity,

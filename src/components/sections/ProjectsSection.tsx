@@ -56,11 +56,6 @@ export function ProjectsSection() {
                     ))}
                   </ul>
                 )}
-                {project.code && (
-                  <pre className="bg-muted/30 p-4 rounded-lg text-xs overflow-x-auto border border-border">
-                    <code className="text-primary">{project.code}</code>
-                  </pre>
-                )}
                 <div className="flex flex-wrap gap-2 pt-2">
                   {project.technologies.map((tech) => (
                     <Badge key={tech} variant="outline" className="text-xs">
