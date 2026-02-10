@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { motion } from "motion/react";
 
 export function Header() {
@@ -13,17 +12,10 @@ export function Header() {
           >
             <span className="text-primary">George</span> <span className="text-foreground">Salebe</span>
           </motion.div>
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="flex items-center gap-4 sm:gap-8">
             <a href="#projects" className="text-sm hover:text-primary transition-colors">Projects</a>
-            <a href="#expertise" className="text-sm hover:text-primary transition-colors">Expertise</a>
             <a href="#contact" className="text-sm hover:text-primary transition-colors">Contact</a>
           </nav>
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-          >
-            <Button size="sm">Let's Talk</Button>
-          </motion.div>
         </div>
       </div>
     </header>

@@ -4,11 +4,14 @@ import { Card, CardHeader } from "@/components/ui/card";
 import { Terminal, Database } from "lucide-react";
 import { motion } from "motion/react";
 import { techStack } from "@/data/portfolio";
+import { GridBackground } from "@/components/ui/GridBackground";
 
 export function HeroSection() {
   return (
-    <section className="container mx-auto px-6 py-20 lg:py-32">
-      <div className="grid lg:grid-cols-2 gap-12 items-center">
+    <section className="relative py-20 lg:py-32 overflow-hidden">
+      <GridBackground />
+      <div className="relative z-10 container mx-auto px-6">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -93,6 +96,7 @@ export function HeroSection() {
             </CardHeader>
           </Card>
         </motion.div>
+        </div>
       </div>
     </section>
   );
