@@ -20,16 +20,16 @@ export const projects = [
   {
     title: "URL Shortener Platform",
     description:
-      "A high-performance system built with URL management front-end with horizontally scalable architecture for URL shortening services.",
+      "Production-ready enterprise URL shortening service with advanced analytics, fraud detection, and intelligent routing. Features Redis-buffered analytics reducing redirect latency from 50ms to <10ms.",
     features: [
-      "Distributed rate limiting",
-      "Custom Prevention System (slash encoding)",
-      "Base62 encoding",
-      "Auto-cleanup after 30d (advanced lazy expiration)",
+      "Redis-buffered analytics (6x faster redirects)",
+      "Short code pool (zero-collision allocation)",
+      "Multi-window burst protection (10s/60s/3600s)",
+      "QR code generation + Custom aliases",
     ],
-    technologies: ["Go", "Redis", "PostgreSQL", "Docker"],
+    technologies: ["Django", "Next.js", "PostgreSQL", "Redis", "Celery"],
     icon: <Code2 className="w-6 h-6" />,
-    codeLink: "#",
+    codeLink: "https://github.com/Georgesa98/UrlShortner",
     demoLink: "#",
   },
 ];

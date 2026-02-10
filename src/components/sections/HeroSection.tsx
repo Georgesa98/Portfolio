@@ -41,8 +41,12 @@ export function HeroSection() {
             ))}
           </div>
           <div className="flex flex-wrap gap-4">
-            <Button size="lg">View Example Projects</Button>
-            <Button size="lg" variant="outline">Get In Touch</Button>
+            <Button size="lg" asChild>
+              <a href="#projects">View Example Projects</a>
+            </Button>
+            <Button size="lg" variant="outline" asChild>
+              <a href="#contact">Get In Touch</a>
+            </Button>
           </div>
         </motion.div>
         
