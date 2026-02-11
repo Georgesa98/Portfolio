@@ -15,7 +15,7 @@ export function GridBackground() {
 
   // Update dimensions on mount and resize (debounced)
   useEffect(() => {
-    let timeoutId: NodeJS.Timeout;
+    let timeoutId: ReturnType<typeof setTimeout>;
     
     const updateDimensions = () => {
       clearTimeout(timeoutId);
