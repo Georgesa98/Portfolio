@@ -32,7 +32,10 @@ jobs:
 
       - name: Build
         run: bun run build
-
+        
+      - name: Add .nojekyll
+        run: touch ./dist/.nojekyll
+        
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
