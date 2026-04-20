@@ -4,6 +4,7 @@ import {
   Shield,
   Activity,
   BarChart3,
+  Building2,
 } from "lucide-react";
 
 export const techStack = [
@@ -30,6 +31,21 @@ export const projects = [
     technologies: ["Django", "Next.js", "PostgreSQL", "Redis", "Celery"],
     icon: <Code2 className="w-6 h-6" />,
     codeLink: "https://github.com/Georgesa98/UrlShortner",
+    demoLink: "#",
+  },
+  {
+    title: "Local Reservation System",
+    description:
+      "Full-stack property booking platform for local markets with a free manager desktop tool, a guest web portal, and commission-based online bookings. Built around automated notifications, secure auth, and pluggable payments.",
+    features: [
+      "Electron desktop app for walk-in and phone reservations",
+      "Next.js guest portal with paid online booking flow",
+      "Shared RTL-ready UI across staff and web experiences",
+      "WhatsApp, Telegram, and email automation for booking events",
+    ],
+    technologies: ["Django", "DRF", "PostgreSQL", "Redis", "Celery", "Electron", "Next.js", "Stripe"],
+    icon: <Building2 className="w-6 h-6" />,
+    codeLink: "#",
     demoLink: "#",
   },
 ];
