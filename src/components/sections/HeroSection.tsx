@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader } from "@/components/ui/card";
-import { Terminal, Database } from "lucide-react";
+import { Database } from "lucide-react";
 import { motion } from "motion/react";
 import { techStack } from "@/data/portfolio";
 import { GridBackground } from "@/components/ui/GridBackground";
